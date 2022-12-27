@@ -23,6 +23,8 @@
 		19A8009537BCAD56435B2DDC620B29AA /* mach_excServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C17D0C03EDECEC1C2E4312F449665003 /* mach_excServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B5648DECACC2C478440DD19516ADCC5 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA27D4E83D92CBFC0BF1D595195B3E /* MatcherProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1B579A4F295AAB8900BA250C /* oabundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 1B579A4E295AAB8900BA250C /* oabundle.js */; };
+		1B579A53295AC3F000BA250C /* oarenderer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1B579A52295AC3F000BA250C /* oarenderer.html */; };
+		1B579A55295AC43300BA250C /* OaRendererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B579A54295AC43300BA250C /* OaRendererViewController.swift */; };
 		1C469C17A0E35E4508F74FEB1EDA586C /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 575BA84ABE043EC0F45DDB202FB31396 /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1D12D3BB1FB2542E6ED6887470BEA80B /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99CB5DF3ABD494232B206F7D64BB64B /* Closures.swift */; };
 		21F3408E9BD0BE7C7A9FFBF43B4F28A0 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB66D4B9FD65233F3B9D7DB1BEB82B6 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -191,6 +193,8 @@
 		190982FB8D45D7CB8E1D936E3B1DE260 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
 		1B1FA1CC317946C74C02AE3EB5A589EB /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
 		1B579A4E295AAB8900BA250C /* oabundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = oabundle.js; path = OpenAttestationIOS/Assets/oabundle.js; sourceTree = "<group>"; };
+		1B579A52295AC3F000BA250C /* oarenderer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = oarenderer.html; path = OpenAttestationIOS/Assets/oarenderer.html; sourceTree = "<group>"; };
+		1B579A54295AC43300BA250C /* OaRendererViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OaRendererViewController.swift; path = OpenAttestationIOS/Classes/OaRendererViewController.swift; sourceTree = "<group>"; };
 		1BA60C587AD2B725830DE7E90478AB0E /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
 		1F2FFF3BDA57A309ED30C608AB4058C2 /* Pods-OpenAttestationIOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OpenAttestationIOS_Tests"; path = Pods_OpenAttestationIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BC97B8588E96F2D0B84DEC0E412F58 /* Quick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Quick-dummy.m"; sourceTree = "<group>"; };
@@ -492,7 +496,9 @@
 			isa = PBXGroup;
 			children = (
 				1B579A4E295AAB8900BA250C /* oabundle.js */,
+				1B579A52295AC3F000BA250C /* oarenderer.html */,
 				2AE5ABD2B703E384AAC7B0C946DAE9AA /* OpenAttestation.swift */,
+				1B579A54295AC43300BA250C /* OaRendererViewController.swift */,
 				33255A2A7D81FE96D27673B3D66794EF /* Pod */,
 				3C7A80AA5B2A583DF66E12AAE6C3BC3A /* Support Files */,
 			);
@@ -886,6 +892,7 @@
 			files = (
 				1B579A4F295AAB8900BA250C /* oabundle.js in Resources */,
 				91CFB85915AAF7F5405523BE5A564CFA /* OpenAttestationIOS-OpenAttestationIOS in Resources */,
+				1B579A53295AC3F000BA250C /* oarenderer.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +933,7 @@
 			files = (
 				EA0A27B918F03D2E93D7F2503826AA03 /* OpenAttestation.swift in Sources */,
 				BAE58D33A03569520A1592B6454A86E4 /* OpenAttestationIOS-dummy.m in Sources */,
+				1B579A55295AC43300BA250C /* OaRendererViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

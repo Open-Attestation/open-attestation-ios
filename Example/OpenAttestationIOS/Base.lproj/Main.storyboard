@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5gX-IZ-Lgo">
-                                <rect key="frame" x="16" y="316.5" width="343" height="34.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5gX-IZ-Lgo">
+                                <rect key="frame" x="16" y="291" width="343" height="85"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-L3-wZb">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="34.5"/>
@@ -29,6 +29,15 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Test Verify"/>
                                         <connections>
                                             <action selector="verifyTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aKP-AI-GCK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owa-uA-ZfW">
+                                        <rect key="frame" x="0.0" y="50.5" width="343" height="34.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buttonViewDocument" label="Test View Document"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Test View Document"/>
+                                        <connections>
+                                            <action selector="viewDocumentTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HaH-G4-lxm"/>
                                         </connections>
                                     </button>
                                 </subviews>
