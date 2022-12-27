@@ -1,0 +1,6 @@
+framework module Pods_OpenAttestationIOS_Example {
+  umbrella header "Pods-OpenAttestationIOS_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "OpenAttestationIOS",
+  "version": "0.1.0",
+  "summary": "A short description of OpenAttestationIOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Tan Cher Shen/OpenAttestationIOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tan Cher Shen": "tan_cher_shen@tech.gov.sg"
+  },
+  "source": {
+    "git": "https://github.com/Tan Cher Shen/OpenAttestationIOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "OpenAttestationIOS/Classes/**/*"
+}
