@@ -1,9 +1,9 @@
 {
   "name": "OpenAttestationIOS",
   "version": "0.1.0",
-  "summary": "A short description of OpenAttestationIOS.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Tan Cher Shen/OpenAttestationIOS",
+  "summary": "An iOS wrapper library for OpenAttestation",
+  "description": "This library allows iOS app developers to build apps that verify and view OpenAttestation documents",
+  "homepage": "https://www.openattestation.com/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,18 @@
     "Tan Cher Shen": "tan_cher_shen@tech.gov.sg"
   },
   "source": {
-    "git": "https://github.com/Tan Cher Shen/OpenAttestationIOS.git",
+    "git": "https://github.com/Open-Attestation/open-attestation-ios.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "OpenAttestationIOS/Classes/**/*"
+  "swift_versions": "4.0",
+  "source_files": "OpenAttestationIOS/Classes/**/*",
+  "resource_bundles": {
+    "OpenAttestationIOS": [
+      "OpenAttestationIOS/Assets/oabundle.js"
+    ]
+  },
+  "swift_version": "4.0"
 }

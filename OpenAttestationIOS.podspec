@@ -33,9 +33,9 @@ This library allows iOS app developers to build apps that verify and view OpenAt
 
   s.source_files = 'OpenAttestationIOS/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'OpenAttestationIOS' => ['OpenAttestationIOS/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'OpenAttestationIOS' => ['OpenAttestationIOS/Assets/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
