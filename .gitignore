@@ -17,6 +17,8 @@ xcuserdata/
 DerivedData
 *.hmap
 *.ipa
+*.xcworkspace
+Example/*.xcworkspace
 
 # Bundler
 .bundle
