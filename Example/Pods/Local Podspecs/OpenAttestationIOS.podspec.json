@@ -22,7 +22,7 @@
   "source_files": "OpenAttestationIOS/Classes/**/*",
   "resource_bundles": {
     "OpenAttestationIOS": [
-      "OpenAttestationIOS/Assets/oabundle.js"
+      "OpenAttestationIOS/Assets/*"
     ]
   },
   "swift_version": "4.0"

@@ -1,12 +1,12 @@
 PODS:
   - Nimble (10.0.0)
   - OpenAttestationIOS (0.1.0)
-  - Quick (2.2.1)
+  - Quick (5.0.1)
 
 DEPENDENCIES:
   - Nimble (~> 10.0.0)
   - OpenAttestationIOS (from `../`)
-  - Quick (~> 2.2.0)
+  - Quick (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
-  OpenAttestationIOS: 51860c293a5ac4338dd304710b2c5601c680bfce
-  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  OpenAttestationIOS: 3511ce01d708a724cb6defcc73c99365d6009e6a
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
 
-PODFILE CHECKSUM: f0c7305d52511c95f9a2550474b8ed99329a4e5c
+PODFILE CHECKSUM: 0d4ed4e6fb619672e6489d34bba590a1d62fc853
 
 COCOAPODS: 1.11.3
