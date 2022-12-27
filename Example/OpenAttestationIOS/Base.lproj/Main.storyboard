@@ -20,22 +20,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5gX-IZ-Lgo">
-                                <rect key="frame" x="16" y="291" width="343" height="85"/>
+                                <rect key="frame" x="16" y="295.5" width="343" height="76"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-L3-wZb">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="buttonTestVerify" label="Test Verify"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Test Verify"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Test Verify"/>
                                         <connections>
                                             <action selector="verifyTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aKP-AI-GCK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owa-uA-ZfW">
-                                        <rect key="frame" x="0.0" y="50.5" width="343" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="buttonViewDocument" label="Test View Document"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Test View Document"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Test View Document"/>
                                         <connections>
                                             <action selector="viewDocumentTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HaH-G4-lxm"/>
                                         </connections>
