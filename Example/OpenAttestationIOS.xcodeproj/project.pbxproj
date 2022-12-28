@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B579A4D295AA12300BA250C /* national-youth-council_obs-moc.oa in Resources */ = {isa = PBXBuildFile; fileRef = 1B579A4C295AA12300BA250C /* national-youth-council_obs-moc.oa */; };
+		1BE39195295C1F29000B71B3 /* OpenAttestationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE39194295C1F29000B71B3 /* OpenAttestationSpec.swift */; };
 		5026B0B1944F6A394BEF328C /* Pods_OpenAttestationIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D6D7CB8A79F2E3ABDE745A /* Pods_OpenAttestationIOS_Example.framework */; };
 		58EB1F7720B27C19069AD0AA /* Pods_OpenAttestationIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E8A8F49106150F1DD32851 /* Pods_OpenAttestationIOS_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -15,7 +16,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1B579A4C295AA12300BA250C /* national-youth-council_obs-moc.oa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "national-youth-council_obs-moc.oa"; sourceTree = "<group>"; };
+		1BE39194295C1F29000B71B3 /* OpenAttestationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAttestationSpec.swift; sourceTree = "<group>"; };
 		1EAEDE4D7E5FF79971B7F915 /* OpenAttestationIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OpenAttestationIOS.podspec; path = ../OpenAttestationIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2BA740CC2A0B2B7144F16B8B /* Pods-OpenAttestationIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAttestationIOS_Example.release.xcconfig"; path = "Target Support Files/Pods-OpenAttestationIOS_Example/Pods-OpenAttestationIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2D2D76B4AA301E0000CB37BA /* Pods-OpenAttestationIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAttestationIOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-OpenAttestationIOS_Example/Pods-OpenAttestationIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* OpenAttestationIOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenAttestationIOS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B03D6F8966C74D61293A05DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B3E8A8F49106150F1DD32851 /* Pods_OpenAttestationIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAttestationIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE79E2FAD18D1BC2A1E7C887 /* Pods-OpenAttestationIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAttestationIOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OpenAttestationIOS_Tests/Pods-OpenAttestationIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				1BE39194295C1F29000B71B3 /* OpenAttestationSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -365,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				1BE39195295C1F29000B71B3 /* OpenAttestationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

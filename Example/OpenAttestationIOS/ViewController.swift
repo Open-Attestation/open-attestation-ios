@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             return
         }
         
-        oa.verifyDocument(view: self.view, oaDocument: oaDocument) { isValid in
+        oa.verifyDocument(oaDocument: oaDocument) { isValid in
             let title = isValid ? "Verification successful" : "Verification failed"
             let message = isValid ? "This document is valid" : "This document has been tampered with"
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
