@@ -1,6 +1,6 @@
 {
   "name": "OpenAttestationIOS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "An iOS wrapper library for OpenAttestation",
   "description": "This library allows iOS app developers to build apps that verify and view OpenAttestation documents",
   "homepage": "https://www.openattestation.com/",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:Open-Attestation/open-attestation-ios.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "11.0"

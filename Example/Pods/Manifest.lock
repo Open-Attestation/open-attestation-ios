@@ -1,6 +1,6 @@
 PODS:
   - Nimble (10.0.0)
-  - OpenAttestationIOS (0.1.1)
+  - OpenAttestationIOS (0.1.2)
   - Quick (5.0.1)
 
 DEPENDENCIES:
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
-  OpenAttestationIOS: 44051a1fecc563bb952ba2b3e18f61e06a0eccbc
+  OpenAttestationIOS: da25e56402eb9e3efb11d5e66792a6e4f33a0308
   Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
 
 PODFILE CHECKSUM: 0d4ed4e6fb619672e6489d34bba590a1d62fc853
