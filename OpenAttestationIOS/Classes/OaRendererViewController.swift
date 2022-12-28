@@ -30,8 +30,13 @@ public class OaRendererViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(closeTapped))
         
-        let bundle = Bundle(for: OaRendererViewController.self)
-        guard let path = bundle.path(forResource: "oabundle", ofType: "js") else {
+        let frameworkBundle = Bundle(for: OpenAttestation.self)
+        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("OpenAttestationIOS.bundle")
+        guard let resourceBundle = Bundle(url: bundleURL!) else {
+            print("Resource bundle for OpenAttestationIOS.bundle not found")
+            return
+        }
+        guard let path = resourceBundle.path(forResource: "oabundle", ofType: "js") else {
             print("oabundle.js not found")
             return
         }
@@ -75,8 +80,13 @@ extension OaRendererViewController: WKNavigationDelegate {
                 guard let template = document["$template"] as? [String: Any] else { return }
                 guard let templateUrl = template["url"] as? String else { return }
                 
-                let bundle = Bundle(for: OaRendererViewController.self)
-                guard let path = bundle.path(forResource: "oarenderer", ofType: "html") else {
+                let frameworkBundle = Bundle(for: OpenAttestation.self)
+                let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("OpenAttestationIOS.bundle")
+                guard let resourceBundle = Bundle(url: bundleURL!) else {
+                    print("Resource bundle for OpenAttestationIOS.bundle not found")
+                    return
+                }
+                guard let path = resourceBundle.path(forResource: "oarenderer", ofType: "html") else {
                     print("oarenderer.html not found")
                     return
                 }

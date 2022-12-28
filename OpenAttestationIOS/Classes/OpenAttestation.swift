@@ -18,8 +18,13 @@ public class OpenAttestation: NSObject {
         self.oaDocument = oaDocument
         self.completion = completion
 
-        let bundle = Bundle(for: OpenAttestation.self)
-        guard let path = bundle.path(forResource: "oabundle", ofType: "js") else {
+        let frameworkBundle = Bundle(for: OpenAttestation.self)
+        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("OpenAttestationIOS.bundle")
+        guard let resourceBundle = Bundle(url: bundleURL!) else {
+            print("Resource bundle for OpenAttestationIOS.bundle not found")
+            return
+        }
+        guard let path = resourceBundle.path(forResource: "oabundle", ofType: "js") else {
             print("oabundle.js not found")
             return
         }
