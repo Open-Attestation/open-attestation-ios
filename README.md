@@ -3,7 +3,7 @@ The OpenAttestationIOS framework allows iOS app developers to build apps that ca
 
 ## Usage
 ### verifyDocument
-`verifyDocument` takes a wrapped document and performs a [verifysignature](https://github.com/Open-Attestation/open-attestation#verify-signature-of-document) on it. A boolean indicating if the document is valid is returned to the input completion handler.
+`verifyDocument` takes a wrapped document and performs a [verifysignature](https://github.com/Open-Attestation/open-attestation#verify-signature-of-document) on it. A boolean indicating if the document is valid is returned as a parameter to the input completion handler.
 
 ```
     import OpenAttestationIOS
