@@ -18,12 +18,12 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This library allows iOS app developers to build apps that verify and view OpenAttestation documents
+The OpenAttestationIOS framework allows iOS app developers to build apps that can verify and view OpenAttestation documents
                        DESC
 
   s.homepage         = 'https://www.openattestation.com/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache-2.0 license', :file => 'LICENSE' }
   s.author           = { 'Tan Cher Shen' => 'tan_cher_shen@tech.gov.sg' }
   s.source           = { :git => 'git@github.com:Open-Attestation/open-attestation-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
