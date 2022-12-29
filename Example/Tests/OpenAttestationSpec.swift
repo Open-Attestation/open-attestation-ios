@@ -3,7 +3,6 @@
 //  OpenAttestationIOS_Tests
 //
 //  Created by Tan Cher Shen on 28/12/22.
-//  Copyright © 2022 CocoaPods. All rights reserved.
 //
 
 import Quick

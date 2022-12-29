@@ -3,7 +3,6 @@
 //  OpenAttestationIOS
 //
 //  Created by Tan Cher Shen on 12/23/2022.
-//  Copyright (c) 2022 Tan Cher Shen. All rights reserved.
 //
 
 import UIKit
