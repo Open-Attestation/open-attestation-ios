@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OpenAttestationIOS'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'An iOS wrapper library for OpenAttestation'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ The OpenAttestationIOS framework allows iOS app developers to build apps that ca
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache-2.0 license', :file => 'LICENSE' }
   s.author           = { 'Tan Cher Shen' => 'tan_cher_shen@tech.gov.sg' }
-  s.source           = { :git => 'git@github.com:Open-Attestation/open-attestation-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Open-Attestation/open-attestation-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
