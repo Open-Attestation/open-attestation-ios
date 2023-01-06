@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func verifyTap(_ sender: Any) {
-        guard let path = Bundle.main.path(forResource: "national-youth-council_obs-moc", ofType: "oa") else {
+        guard let path = Bundle.main.path(forResource: "sample", ofType: "oa") else {
             print("oa file not found")
             return
         }
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func viewDocumentTap(_ sender: Any) {
-        guard let path = Bundle.main.path(forResource: "national-youth-council_obs-moc", ofType: "oa") else {
+        guard let path = Bundle.main.path(forResource: "sample", ofType: "oa") else {
             print("oa file not found")
             return
         }
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         }
         
         let rendererVC = OaRendererViewController(oaDocument: oaDocument)
-        rendererVC.title = "national-youth-council_obs-moc.oa"
+        rendererVC.title = "sample.oa"
         let navigationController = UINavigationController(rootViewController: rendererVC)
         navigationController.modalPresentationStyle = .fullScreen
         self.present(navigationController, animated: true)
