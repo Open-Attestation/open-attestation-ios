@@ -20,15 +20,15 @@ The OpenAttestationIOS framework allows iOS app developers to build apps that ca
 ### OaRendererViewController
 `OaRendererViewController` is a UIViewController that takes a wrapped document and renders the document template if the provided document is valid.
 ```
-        import OpenAttestationIOS
-        
-        ...
-        
-        let rendererVC = OaRendererViewController(oaDocument: oaDocument)
-        rendererVC.title = "<DOCUMENT NAME>"
-        let navigationController = UINavigationController(rootViewController: rendererVC)
-        navigationController.modalPresentationStyle = .fullScreen
-        self.present(navigationController, animated: true)
+    import OpenAttestationIOS
+    
+    ...
+    
+    let rendererVC = OaRendererViewController(oaDocument: oaDocument)
+    rendererVC.title = "<DOCUMENT NAME>"
+    let navigationController = UINavigationController(rootViewController: rendererVC)
+    navigationController.modalPresentationStyle = .fullScreen
+    self.present(navigationController, animated: true)
 ```
 
 ## Example
