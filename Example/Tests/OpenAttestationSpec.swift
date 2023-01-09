@@ -35,6 +35,16 @@ final class OpenAttestationSpec: QuickSpec {
                         }
                     }
                 }
+                context("given an input that is not an OpenAttestation document") {
+                    it("will retturn false") {
+                        waitUntil(timeout: .seconds(5)) { done in
+                            sut.verifyDocument(oaDocument: "NOT AN OPENATTESTATION DOCUMENT") { isValid in
+                                expect(isValid) == false
+                                done()
+                            }
+                        }
+                    }
+                }
             }
         }
     }
