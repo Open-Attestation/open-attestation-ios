@@ -24,7 +24,7 @@ The OpenAttestationIOS framework allows iOS app developers to build apps that ca
     
     ...
     
-    let rendererVC = OaRendererViewController(oaDocument: oaDocument)
+    let rendererVC = OaRendererViewController(oaDocument: "<DOCUMENT CONTENT>")
     rendererVC.title = "<DOCUMENT NAME>"
     let navigationController = UINavigationController(rootViewController: rendererVC)
     navigationController.modalPresentationStyle = .fullScreen
