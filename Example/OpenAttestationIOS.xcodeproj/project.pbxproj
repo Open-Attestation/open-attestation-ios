@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1BDA44D72967C05E00733BC5 /* sample.oa in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA44D62967C05E00733BC5 /* sample.oa */; };
+		1BDA44DB297638A300733BC5 /* tampered.oa in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA44D8297638A300733BC5 /* tampered.oa */; };
+		1BDA44DC297638A300733BC5 /* sample-card.oa in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA44D9297638A300733BC5 /* sample-card.oa */; };
+		1BDA44DD297638A300733BC5 /* sample-a4.oa in Resources */ = {isa = PBXBuildFile; fileRef = 1BDA44DA297638A300733BC5 /* sample-a4.oa */; };
 		1BE39195295C1F29000B71B3 /* OpenAttestationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE39194295C1F29000B71B3 /* OpenAttestationSpec.swift */; };
 		5026B0B1944F6A394BEF328C /* Pods_OpenAttestationIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D6D7CB8A79F2E3ABDE745A /* Pods_OpenAttestationIOS_Example.framework */; };
 		58EB1F7720B27C19069AD0AA /* Pods_OpenAttestationIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E8A8F49106150F1DD32851 /* Pods_OpenAttestationIOS_Tests.framework */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		1BDA44D62967C05E00733BC5 /* sample.oa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.oa; sourceTree = "<group>"; };
+		1BDA44D8297638A300733BC5 /* tampered.oa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tampered.oa; sourceTree = "<group>"; };
+		1BDA44D9297638A300733BC5 /* sample-card.oa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-card.oa"; sourceTree = "<group>"; };
+		1BDA44DA297638A300733BC5 /* sample-a4.oa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-a4.oa"; sourceTree = "<group>"; };
 		1BE39194295C1F29000B71B3 /* OpenAttestationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAttestationSpec.swift; sourceTree = "<group>"; };
 		1EAEDE4D7E5FF79971B7F915 /* OpenAttestationIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OpenAttestationIOS.podspec; path = ../OpenAttestationIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2BA740CC2A0B2B7144F16B8B /* Pods-OpenAttestationIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAttestationIOS_Example.release.xcconfig"; path = "Target Support Files/Pods-OpenAttestationIOS_Example/Pods-OpenAttestationIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				1BDA44D62967C05E00733BC5 /* sample.oa */,
+				1BDA44DA297638A300733BC5 /* sample-a4.oa */,
+				1BDA44D9297638A300733BC5 /* sample-card.oa */,
+				1BDA44D8297638A300733BC5 /* tampered.oa */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for OpenAttestationIOS";
@@ -251,9 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				1BDA44DC297638A300733BC5 /* sample-card.oa in Resources */,
+				1BDA44DB297638A300733BC5 /* tampered.oa in Resources */,
 				1BDA44D72967C05E00733BC5 /* sample.oa in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				1BDA44DD297638A300733BC5 /* sample-a4.oa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

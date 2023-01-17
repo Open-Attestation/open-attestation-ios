@@ -18,7 +18,7 @@ The OpenAttestationIOS framework allows iOS app developers to build apps that ca
     }
 ```
 ### OaRendererViewController
-`OaRendererViewController` is a UIViewController that takes a wrapped document and renders the document template if the provided document is valid.
+`OaRendererViewController` is a UIViewController that takes a wrapped document and renders the document template.
 ```
     import OpenAttestationIOS
     

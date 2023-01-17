@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func verifyTap(_ sender: Any) {
-        guard let path = Bundle.main.path(forResource: "sample", ofType: "oa") else {
+    private func verifySelectedDocument(filename: String) {
+        guard let path = Bundle.main.path(forResource: filename, ofType: "oa") else {
             print("oa file not found")
             return
         }
@@ -41,8 +41,32 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func viewDocumentTap(_ sender: Any) {
-        guard let path = Bundle.main.path(forResource: "sample", ofType: "oa") else {
+    @IBAction func verifyTap(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Select document", message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "sample.oa", style: .default , handler:{ (UIAlertAction) in
+            self.verifySelectedDocument(filename: "sample")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "sample-card.oa", style: .default , handler:{ (UIAlertAction) in
+            self.verifySelectedDocument(filename: "sample-card")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "sample-a4.oa", style: .default , handler:{ (UIAlertAction) in
+            self.verifySelectedDocument(filename: "sample-a4")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "tampered.oa", style: .default , handler:{ (UIAlertAction) in
+            self.verifySelectedDocument(filename: "tampered")
+        }))
+        
+        alert.popoverPresentationController?.sourceView = self.view
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func viewSelectedDocument(filename: String) {
+        guard let path = Bundle.main.path(forResource: filename, ofType: "oa") else {
             print("oa file not found")
             return
         }
@@ -53,10 +77,33 @@ class ViewController: UIViewController {
         }
         
         let rendererVC = OaRendererViewController(oaDocument: oaDocument)
-        rendererVC.title = "sample.oa"
+        rendererVC.title = "\(filename).oa"
         let navigationController = UINavigationController(rootViewController: rendererVC)
         navigationController.modalPresentationStyle = .fullScreen
         self.present(navigationController, animated: true)
+    }
+    
+    @IBAction func viewDocumentTap(_ sender: Any) {
+        let alert = UIAlertController(title: "Select document", message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "sample.oa", style: .default , handler:{ (UIAlertAction) in
+            self.viewSelectedDocument(filename: "sample")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "sample-card.oa", style: .default , handler:{ (UIAlertAction) in
+            self.viewSelectedDocument(filename: "sample-card")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "sample-a4.oa", style: .default , handler:{ (UIAlertAction) in
+            self.viewSelectedDocument(filename: "sample-a4")
+        }))
+        
+        alert.addAction(UIAlertAction(title: "tampered.oa", style: .default , handler:{ (UIAlertAction) in
+            self.viewSelectedDocument(filename: "tampered")
+        }))
+        
+        alert.popoverPresentationController?.sourceView = self.view
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
